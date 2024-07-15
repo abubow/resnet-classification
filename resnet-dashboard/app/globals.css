@@ -17,14 +17,21 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f3f4f6;
 }
+
+input[type="file"] {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
 
 @layer utilities {
   .text-balance {
