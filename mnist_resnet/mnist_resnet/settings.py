@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+import tensorflow as tf
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -127,3 +128,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Load the model once when the server starts
+MODEL_PATH = os.path.join(BASE_DIR, 'path/to/your/best_model.keras')
+MODEL = tf.keras.models.load_model(MODEL_PATH) if os.path.exists(MODEL_PATH) else None
