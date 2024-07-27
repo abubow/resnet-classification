@@ -52,11 +52,11 @@ const ModelDescription = () => {
           />
           <h2 className="text-lg font-bold mb-4">Optimizer</h2>
           <p className="mb-4">
-            The model uses the Adam optimizer with gradient clipping to prevent exploding gradients. The loss function is sparse categorical cross-entropy, and the performance metric is accuracy.
+            {"The model uses the Adam optimizer with gradient clipping to prevent exploding gradients. The loss function is sparse categorical cross-entropy, and the performance metric is accuracy."}
           </p>
           <h2 className="text-lg font-bold mb-4">Training and Validation</h2>
           <p className="mb-4">
-            The model was trained on the Fashion MNIST dataset, which consists of 70,000 images. The training set has 60,000 images, and the validation set has 10,000 images. Below is the training history showing the model's accuracy and loss over epochs.
+            {"The model was trained on the Fashion MNIST dataset, which consists of 70,000 images. The training set has 60,000 images, and the validation set has 10,000 images. Below is the training history showing the model's accuracy and loss over epochs."}
           </p>
           <Image
             src="/training.png" // Add the correct path to your image
@@ -67,7 +67,7 @@ const ModelDescription = () => {
           />
           <h2 className="text-lg font-bold mb-4">Confusion Matrix</h2>
           <p className="mb-4">
-            The confusion matrix below shows the performance of the model on the test dataset, providing insights into the model's accuracy for each class.
+            {"The confusion matrix below shows the performance of the model on the test dataset, providing insights into the model's accuracy for each class."}
           </p>
           <Image
             src="/confusion_matrix.png" // Add the correct path to your image

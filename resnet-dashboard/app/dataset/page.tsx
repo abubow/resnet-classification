@@ -1,12 +1,12 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
   CardContent,
-} from '@/components/ui/card';
-import Image from 'next/image';
+} from "@/components/ui/card";
+import Image from "next/image";
 
 const DatasetDescription = () => {
   return (
@@ -21,11 +21,16 @@ const DatasetDescription = () => {
         <CardContent>
           <h2 className="text-lg font-bold mb-4">Dataset Overview</h2>
           <p className="mb-4">
-            The dataset used for training the model is the Fashion MNIST dataset. It consists of 60,000 grayscale images of 10 different fashion categories, with 6,000 images per category.
+            The dataset used for training the model is the Fashion MNIST
+            dataset. It consists of 60,000 grayscale images of 10 different
+            fashion categories, with 6,000 images per category.
           </p>
           <ul className="list-disc list-inside mb-4">
             <li>Each image is 28x28 pixels</li>
-            <li>10 categories: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot</li>
+            <li>
+              10 categories: T-shirt/top, Trouser, Pullover, Dress, Coat,
+              Sandal, Shirt, Sneaker, Bag, Ankle boot
+            </li>
           </ul>
           <h2 className="text-lg font-bold mb-4">Category Distribution</h2>
           <p className="mb-4">
@@ -40,7 +45,9 @@ const DatasetDescription = () => {
           />
           <h2 className="text-lg font-bold mb-4">Data Augmentation</h2>
           <p className="mb-4">
-            To improve the model's performance and generalization, data augmentation techniques are applied to the training images. These techniques include:
+            {
+              "To improve the model's performance and generalization, data augmentation techniques are applied to the training images. These techniques include:"
+            }
           </p>
           <ul className="list-disc list-inside mb-4">
             <li>Random rotations</li>
